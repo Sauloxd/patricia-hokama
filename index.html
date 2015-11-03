@@ -2,19 +2,43 @@
 <html lang="en" ng-app="myapp">
 <head>
   <!-- Angular must be defined before its ui-router -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-  <script src="js/all.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="js/angular-animate.js"></script>
+  <script type="text/javascript" src="js/all.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 
   <!-- Main CSS -->
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <meta charset="utf-8">
   <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
-  <title>Fat Amy</title>
+  <title>Patrícia Hokama ;)</title>
   <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
   <!-- <link rel="stylesheet" href="css/app.css"> -->
 </head>
 <body>
-  <div ui-view></div>  
+<div class="loading" style="position: absolute">
+  <div class="navbar-container" style="position: absolute">
+    <input type="checkbox" id="navbar-toogle" class="navbar-menu-toggle"/>
+    <label for="navbar-toogle" class="navbar-menu-tg-container">
+      <div class="navbar-menu-tg-icon-top"></div>
+      <div class="navbar-menu-tg-icon-bot"></div>
+    </label><a ui-sref="home" class="navbar-logo">Patrícia Hokama</a>
+  </div>
+        <!-- BEGIN: Actual animated container. -->
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+        <!-- END: Actual animated container. -->
+
+    </div>
+<div ui-view class="hidden"></div>
+<script type="text/javascript">
+    $(window).load(function() {
+    // Animate loader off screen
+    $(".hidden").css("visibility", "initial");
+      });
+</script>
 </body>
 </html>
