@@ -17,22 +17,17 @@
   <!-- <link rel="stylesheet" href="css/app.css"> -->
 </head>
 <body>
-<div class="loading" style="position: absolute">
-  <div class="navbar-container" style="position: absolute">
-    <input type="checkbox" id="navbar-toogle" class="navbar-menu-toggle"/>
-    <label for="navbar-toogle" class="navbar-menu-tg-container">
-      <div class="navbar-menu-tg-icon-top"></div>
-      <div class="navbar-menu-tg-icon-bot"></div>
-    </label><a ui-sref="home" class="navbar-logo">Patrícia Hokama</a>
-  </div>
         <!-- BEGIN: Actual animated container. -->
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
+      <div class="loading" style="position: absolute">  
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
       </div>
         <!-- END: Actual animated container. -->
 
     </div>
 <div ui-view class="hidden"></div>
+
 </body>
 </html>
