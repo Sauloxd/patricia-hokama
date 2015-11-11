@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+<head>
+  <!-- Angular must be defined before its ui-router -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="js/angular-animate.js"></script>
+  <script type="text/javascript" src="js/all.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+  <title>Patrícia Hokama ;)</title>
+  <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
+</head>
+<body>
+        <!-- BEGIN: Actual animated container. -->
+      <div class="loading" style="position: absolute">  
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+        <!-- END: Actual animated container. -->
+
+    </div>
+<div ui-view class="hidden"></div>
+
+</body>
+</html>

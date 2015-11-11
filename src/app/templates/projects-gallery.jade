@@ -1,0 +1,25 @@
+//- .img-fullscreen
+//-   include ./../partials/navbar.jade
+//-   .img-header
+//-     a.body.light.largest.img-overlay-title(ui-sref="{{indexPage}}") {{name}}
+//-     //- img.img-project-item(src="/patricia-hokama/resources/mn/prj-mooca-head.png")
+//-     img.img-project-item(src="{{headImage}}")
+//-   //- .img-overlay(ng-repeat = "img in images")
+//-   //-   p.body.light.largest.img-overlay-text {{img.description}}
+//-   //-   //- img.img-project-item(src="/patricia-hokama/resources/mn/prj-mooca-1.png")
+//-   //-   img.img-project-item(src="{{img.path}}")
+//-   .img-sliding-container(ng-repeat = "img in images")
+//-     input(id="sliding-content" type="checkbox").img-description-tg
+//-     label(for="sliding-content").img-description-container
+//-       img.img-project-item.img-sliding(src="{{img.path}}")
+//-       p.body.light.largest.img-sliding-description fasdfkadsmfkas
+.img-fullscreen
+  include ./../partials/navbar.jade
+  .img-header
+    a.body.light.largest.img-overlay-title(ui-sref="{{indexPage}}") {{name}}
+    //- img.img-project-item(src="/patricia-hokama/resources/mn/prj-mooca-head.png")
+    img.img-project-item(src="{{headImage}}")
+  .img-overlay(ng-repeat = "img in images")
+    p.body.light.largest.img-overlay-text {{img.description}}
+    //- img.img-project-item(src="/patricia-hokama/resources/mn/prj-mooca-1.png")
+    img.img-project-item(src="{{img.path}}")
