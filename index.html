@@ -9,6 +9,7 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" media="(max-width: 640px)" href="css/index.css">
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/index-desktop.css">
 
   <meta charset="utf-8">
   <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
   <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
   <!-- <link rel="stylesheet" href="css/app.css"> -->
 </head>
-<body>
+<body class="desktop-wip">
         <!-- BEGIN: Actual animated container. -->
       <div class="loading" style="position: absolute">  
         <div class="spinner">
@@ -27,6 +28,8 @@
         <!-- END: Actual animated container. -->
 
     </div>
+    <p class="desktop-text">Sadly, this site is not ready for desktop views...</p>
+    <p class="desktop-text">Try visualizing in a mobile phone!</p>
 <div ui-view ></div>
 
 </body>
